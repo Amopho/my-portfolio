@@ -113,7 +113,7 @@ section {
 
 .hi-img {
   width: 50vw;
-  height: 100vh;
+  /* height: 50vh; */
   background-image: url(../img/nature-glasses.jpg);
   background-size: cover;
   background-position: center;
@@ -168,14 +168,15 @@ section {
   }
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (max-width: 800px) {
   .section-container {
-    flex-direction: row-reverse;
-  }
-}
-
-@media only screen and (min-width: 801px) {
-  .sections-container {
     flex-direction: column;
+    justify-content: center;
+  }
+
+  .hi-img {
+    display: flex;
+    min-width: 300px;
+    height: 45vh;
   }
 }
