@@ -86,13 +86,20 @@ header a {
   text-decoration: none;
 }
 
-.container {
+.sections-container {
   height: 90vh;
+  width: 100%;
   display: flex;
+  flex-direction: column;
 }
 
 .hi {
   width: 100vw;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
 }
 
 .section-container {
@@ -121,6 +128,7 @@ header a {
   display: flex;
   flex-direction: column;
   width: 50vh;
+  border: red 2px dashed;
 }
 .hi h1 {
   padding-bottom: 10px;
@@ -130,6 +138,12 @@ header a {
   font-family: "Catamaran";
   font-weight: normal;
 }
+
+.go-down {
+  border: dashed 2px red;
+  width: 100%;
+}
+
 /* Display on various devices */
 
 @media only screen and (min-width: 601px) {
@@ -140,7 +154,7 @@ header a {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 800px) {
-  section {
+  main {
     flex-direction: column;
   }
 
@@ -157,5 +171,11 @@ header a {
 @media only screen and (min-width: 801px) {
   .section-container {
     flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .sections-container {
+    flex-direction: column;
   }
 }
