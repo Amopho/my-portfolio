@@ -18,11 +18,6 @@
   src: url("../fonts/Catamaran/static/Catamaran-Regular.ttf");
 }
 
-@font-face {
-  font-family: "Catamaran";
-  src: url("../fonts/Catamaran/static/Catamaran-Bold.ttf");
-}
-
 * {
   margin: 0 auto;
   padding: 0;
@@ -36,6 +31,10 @@
 body {
   font-family: "News Cycle";
   background-color: #fff;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header {
@@ -72,8 +71,9 @@ header div {
   line-height: 1.5;
 }
 
-header nav ul {
+header nav ul li {
   display: inline-block;
+  padding-right: 2rem;
 }
 
 header ul li {
@@ -93,13 +93,23 @@ header a {
 
 .container img {
   width: 50vw;
-  max-width: 1200px;
+  height: 100%;
+  /* max-width: 1200px; */
   border: dashed 2px red;
 }
 
 .hi {
   border: dashed 2px red;
   display: flex;
+}
+
+.hi h1 {
+  padding-bottom: 10px;
+}
+
+.hi p {
+  font-family: "Catamaran";
+  font-weight: normal;
 }
 
 .section-container {
