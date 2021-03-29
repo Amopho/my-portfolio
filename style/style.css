@@ -335,8 +335,32 @@ p {
     display: none;
   }
 
-  main {
+  .sections-container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+  }
+
+  .section-container {
+    flex-direction: column;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hi-img {
+    width: 100vw;
+    height: 90vh;
+    min-width: 300px;
+    z-index: 1;
+    display: flex;
+  }
+
+  .section-text {
+    width: 100vw;
+    height: 90vh;
   }
 
   .story-container {
